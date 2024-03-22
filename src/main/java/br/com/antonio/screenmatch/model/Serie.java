@@ -66,6 +66,10 @@ public class Serie {
         return totalTemporadas;
     }
 
+    public List<Episodio> getEpisodios() {
+        return episodios;
+    }
+
     public void setEpisodios(List<Episodio> episodios) {
         episodios.forEach(e -> e.setSerie(this));
         this.episodios = episodios;
